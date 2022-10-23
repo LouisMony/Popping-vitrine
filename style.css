@@ -187,30 +187,45 @@ body .container section:nth-of-type(even) {
 }
 
 body .container section .main_content {
-  padding: 20vh 120px;
+  padding: 8% 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 60%;
   height: 100%;
 }
 
+@media screen and (max-height: 800px) {
+  body .container section .main_content {
+    padding: 100px 50px;
+  }
+  body .container section .main_content p {
+    font-size: 14px;
+  }
+}
+
 body .container section .main_content h1 {
+  position: relative;
+  z-index: 100;
   font-weight: 500;
-  font-size: 110px;
+  font-size: 12vh;
   line-height: 95px;
-  margin: 0 0 80px 0;
+  margin: 0 0 5% 0;
 }
 
 body .container section .main_content P {
+  position: relative;
+  z-index: 100;
   text-align: justify;
   color: #FFFFFF;
 }
 
 body .container section .main_content .p_green {
+  z-index: 100;
   color: #424530 !important;
 }
 
 body .container section .main_content .link {
+  z-index: 100;
   cursor: pointer;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -222,9 +237,9 @@ body .container section .main_content .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   text-align: right;
 }
 
@@ -357,7 +372,7 @@ body .container section:nth-of-type(1) h1 {
   padding: 0;
   z-index: 100;
   font-weight: 500;
-  font-size: 180px;
+  font-size: 10vw;
   line-height: 160px;
   position: relative;
 }
@@ -368,10 +383,12 @@ body .container section:nth-of-type(1) h2 {
   padding: 0;
   z-index: 100;
   font-weight: 400;
-  font-size: 75px;
+  font-size: 5vw;
 }
 
 body .container section:nth-of-type(1) .options {
+  position: relative;
+  z-index: 100;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;

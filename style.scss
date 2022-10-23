@@ -151,35 +151,50 @@ body{
             }
 
             .main_content{
-                padding: 20vh 120px;
+                padding: 8% 80px;
                 box-sizing: border-box;
                 width: 60%;
                 height: 100%;
 
+                @media screen and (max-height: 800px)
+                {
+                    padding: 100px 50px;
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+
                 h1{
+                    position: relative;
+                    z-index: 100;
                     font-weight: 500;
-                    font-size: 110px;
+                    font-size: 12vh;
                     line-height: 95px;
-                    margin: 0 0 80px 0;
+                    margin: 0 0 5% 0;
                 }
 
                 P{
+                    position: relative;
+                    z-index: 100;
                     text-align: justify;
                     color: #FFFFFF;
                 }
 
                 .p_green{
+                    z-index: 100;
                     color: #424530!important
                 }
                 .link{
+                    z-index: 100;
                     cursor: pointer;
                     justify-content: flex-end;
                     gap: 10px;
                     display: flex;
                     align-items: center;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     font-weight: 400;
-                    font-size: 20px;
+                    font-size: 16px;
                     text-align: right;
                     
                 }
@@ -272,7 +287,7 @@ body{
                     padding: 0;
                     z-index: 100;
                     font-weight: 500;
-                    font-size: 180px;
+                    font-size: 10vw;
                     line-height: 160px;
                     position: relative;
                 }
@@ -283,9 +298,11 @@ body{
                     padding: 0;
                     z-index: 100;
                     font-weight: 400;
-                    font-size: 75px;
+                    font-size: 5vw;
                 }
                 .options{
+                    position: relative;
+                    z-index: 100;
                     margin-top: 50px;
                     display: flex;
                     gap: 100px;
